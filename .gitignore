@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+backend/trained/
+*.pth
+.env
+~$*
+*.pptm
