@@ -1,3 +1,4 @@
+const API_URL = "https:braintumourai.onrender.com";
 const fileInput = document.getElementById("fileInput");
 const predictBtn = document.getElementById("predictBtn");
 const preview = document.getElementById("preview");
