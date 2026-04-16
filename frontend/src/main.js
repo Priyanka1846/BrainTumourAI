@@ -46,11 +46,15 @@ predictBtn.addEventListener("click", async () =>
 
     try
     {
-        const response = await fetch("https://braintumourai.onrender.com/predict",
-        {
+        const response = await fetch(`${API_URL}/predict`, {
             method: "POST",
-            body: formData
+            body: formData,
+            mode: "cors"
         });
+
+        if(!response.ok) {
+            throw new Error("Server error");
+        }
 
         const data = await response.json();
 
